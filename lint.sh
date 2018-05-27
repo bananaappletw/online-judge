@@ -1,3 +1,3 @@
 #!/bin/bash
-astyle ./*.cpp
-rm ./*.cpp.orig
+find ./ -iname *.cpp | xargs astyle
+find ./ -iname *.cpp.orig | xargs rm -rf
